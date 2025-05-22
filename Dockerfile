@@ -7,6 +7,6 @@ WORKDIR /work
 
 COPY . .
 
-RUN chmod +x /work/start.sh
+RUN chmod +x /work/script.sh
 
 ENTRYPOINT ["/bin/sh", "-c", "/work/script.sh"]
