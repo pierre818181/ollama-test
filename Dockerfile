@@ -9,6 +9,6 @@ COPY . .
 
 RUN chmod +x /work/script.sh
 
-RUN pip3 install runpod
+RUN uv run pip install runpod
 
 ENTRYPOINT ["/bin/sh", "-c", "/work/script.sh"]
